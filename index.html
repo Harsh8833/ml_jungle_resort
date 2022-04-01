@@ -46,13 +46,129 @@
             </a>
         </div>
     </header>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc-qSF6C3cgn0rhfMrLpWu_vOjJa-Y2VR8Go6eVV8xz7n4HMA/viewform?embedded=true" width="480" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
+
+    <!-- Use any element to open the sidenav -->
+
+
+    <style>
+        body,
+        h1,
+        h2 {
+            font-family: "Raleway", sans-serif
+        }
+        
+        body,
+        html {
+            height: 100%
+        }
+        
+        p {
+            line-height: 2
+        }
+        
+        .bgimg,
+        .bgimg2 {
+            min-height: 100%;
+            background-position: center;
+            background-size: cover;
+        }
+        
+        .bgimg {
+            background-image: url("/w3images/wedding_couple.jpg")
+        }
+        
+        .bgimg2 {
+            background-image: url("/w3images/flowers.jpg")
+        }
+        /* The side navigation menu */
+        
+        .sidenav {
+            height: 100%;
+            /* 100% Full-height */
+            width: 0;
+            /* 0 width - change this with JavaScript */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Stay on top */
+            top: 0;
+            /* Stay at the top */
+            left: 0;
+            background-color: rgb(195, 221, 185);
+            /* Black*/
+            overflow-x: hidden;
+            /* Disable horizontal scroll */
+            padding-top: 60px;
+            /* Place content 60px from the top */
+            transition: 0.5s;
+            /* 0.5 second transition effect to slide in the sidenav */
+        }
+        /* The navigation menu links */
+        
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+        /* When you mouse over the navigation links, change their color */
+        
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+        /* Position and style the close button (top right corner) */
+        
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+        /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+        
+        #main {
+            transition: margin-left .5s;
+            padding: 20px;
+        }
+        /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+        
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+    </style>
+    <script>
+        /* Set the width of the side navigation to 250px */
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "500px";
+        }
+
+        /* Set the width of the side navigation to 0 */
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+
+
     <section class="u-align-center u-clearfix u-image u-shading u-section-1" id="carousel_790c" data-image-width="1040" data-image-height="780">
         <div class="u-clearfix u-sheet u-sheet-1">
             <h4 class="u-custom-font u-font-source-sans-pro u-text u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xl u-text-1">ML INFRATECH</h4>
             <img src="images/rrr.png" alt="" class="u-image u-image-contain u-image-default u-image-1" data-image-width="1776" data-image-height="621">
             <h1 class="u-text u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xl u-text-2"> ML JUNGLE RESORT</h1>
             <h3 class="u-text u-text-body-alt-color u-text-3"> Find out where the people are going and buy the land before they get there</h3>
-            <a href="" class="u-active-white u-align-center u-border-2 u-border-active-white u-border-hover-white u-border-white u-btn u-btn-round u-button-style u-hover-white u-none u-radius-32 u-btn-1">Contact us</a>
+            <a onclick="openNav()" class="u-active-white u-align-center u-border-2 u-border-active-white u-border-hover-white u-border-white u-btn u-btn-round u-button-style u-hover-white u-none u-radius-32 u-btn-1">Contact us</a>
         </div>
     </section>
     <section class="u-align-center u-clearfix u-palette-5-dark-3 u-section-2" id="sec-e48d">
