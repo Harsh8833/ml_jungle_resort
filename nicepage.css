@@ -36581,7 +36581,6 @@ a.u-link.u-text-hover-grey-90:hover {
   width: 620px;
   min-height: 184px;
   background-image: none;
-  height: auto;
   margin: 1px 254px 1px auto;
 }
 
@@ -36617,7 +36616,6 @@ a.u-link.u-text-hover-grey-90:hover {
     width: 620px;
     min-height: 143px;
     margin-right: auto;
-    height: auto;
   }
 }
 @media (max-width: 991px) {
