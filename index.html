@@ -49,7 +49,7 @@
 
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc-qSF6C3cgn0rhfMrLpWu_vOjJa-Y2VR8Go6eVV8xz7n4HMA/viewform?embedded=true" width="480" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc-qSF6C3cgn0rhfMrLpWu_vOjJa-Y2VR8Go6eVV8xz7n4HMA/viewform?embedded=true" width="90%" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
     </div>
 
     <!-- Use any element to open the sidenav -->
@@ -152,7 +152,15 @@
     <script>
         /* Set the width of the side navigation to 250px */
         function openNav() {
-            document.getElementById("mySidenav").style.width = "500px";
+            var width = "500px";
+            if (window.screen.width < 450) {
+                width = '100%';
+
+            }
+            console.log(width)
+
+            document.getElementById("mySidenav").style.width = width;
+
             document.getElementById("sec-2a97").style.display = "none";
         }
 
@@ -413,7 +421,7 @@
             }
         </style>
         <div class="u-shape u-shape-svg u-text-palette-5-base u-shape-1">
-            <svg class="u-svg-link" preserveAspectRatio="none" viewBox="0 0 160 160" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-525f"></use></svg>
+            <svg class="u-svg-link" preserveAspectRatio="none" viewBox="0 0 160 160"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-525f"></use></svg>
             <svg class="u-svg-content" viewBox="0 0 160 160" x="0px" y="0px" id="svg-525f" style="enable-background:new 0 0 160 160;"><path d="M80,30c27.6,0,50,22.4,50,50s-22.4,50-50,50s-50-22.4-50-50S52.4,30,80,30 M80,0C35.8,0,0,35.8,0,80s35.8,80,80,80
 	s80-35.8,80-80S124.2,0,80,0L80,0z"></path></svg>
         </div>
@@ -512,7 +520,7 @@
             <div class="u-border-10 u-border-white u-image u-image-circle u-image-2" data-image-width="810" data-image-height="657"></div>
             <div class="u-flip-horizontal u-hidden-md u-hidden-sm u-hidden-xs u-image u-image-circle u-image-3" data-image-width="1040" data-image-height="780"></div>
             <div class="u-shape u-shape-svg u-text-custom-color-1 u-shape-1">
-                <svg class="u-svg-link" preserveAspectRatio="none" viewBox="0 0 160 160" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-1186"></use></svg>
+                <svg class="u-svg-link" preserveAspectRatio="none" viewBox="0 0 160 160"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-1186"></use></svg>
                 <svg class="u-svg-content" viewBox="0 0 160 160" x="0px" y="0px" id="svg-1186" style="enable-background:new 0 0 160 160;"><path d="M80,30c27.6,0,50,22.4,50,50s-22.4,50-50,50s-50-22.4-50-50S52.4,30,80,30 M80,0C35.8,0,0,35.8,0,80s35.8,80,80,80
 	s80-35.8,80-80S124.2,0,80,0L80,0z"></path></svg>
             </div>
@@ -521,7 +529,7 @@
                     <h2 class="u-text u-text-default u-text-1" data-animation-name="customAnimationIn" data-animation-duration="1000">Pre-Launch</h2>
                     <p class="u-text u-text-2" data-animation-name="customAnimationIn" data-animation-duration="1000"><b>26 lakhs<br>(13000 Per Sq Yard)</b>
                     </p>
-                    <a onclick="openNav()" href="https://github.com/Harsh8833/ml_jungle_resort/raw/main/ML%20Jungle%20Resort%20FB.pdf" class="u-active-palette-5-dark-2 u-align-center u-border-none u-btn u-btn-round u-button-style u-color-scheme-summer-time u-color-style-multicolor-1 u-custom-color-1 u-hover-palette-5-dark-2 u-radius-50 u-text-active-white u-text-body-alt-color u-text-hover-white u-btn-1">Download brochure</a>
+                    <a onclick="openNav()" href="https://github.com/Harsh8833/ml_jungle_resort/raw/main/Final%20Brochure%20Ml%20Jungle%20Resort.pdf" class="u-active-palette-5-dark-2 u-align-center u-border-none u-btn u-btn-round u-button-style u-color-scheme-summer-time u-color-style-multicolor-1 u-custom-color-1 u-hover-palette-5-dark-2 u-radius-50 u-text-active-white u-text-body-alt-color u-text-hover-white u-btn-1">Download brochure</a>
                 </div>
             </div>
         </div>
@@ -531,7 +539,7 @@
             <div class="u-align-left u-container-style u-expanded-width-xs u-group u-group-1">
                 <div class="u-container-layout u-container-layout-1">
                     <div class="u-hidden-xs u-shape u-shape-svg u-text-custom-color-1 u-shape-1">
-                        <svg class="u-svg-link" preserveAspectRatio="none" viewBox="0 0 160 160" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-8cdc"></use></svg>
+                        <svg class="u-svg-link" preserveAspectRatio="none" viewBox="0 0 160 160"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-8cdc"></use></svg>
                         <svg class="u-svg-content" viewBox="0 0 160 160" x="0px" y="0px" id="svg-8cdc" style="enable-background:new 0 0 160 160;"><path d="M80,30c27.6,0,50,22.4,50,50s-22.4,50-50,50s-50-22.4-50-50S52.4,30,80,30 M80,0C35.8,0,0,35.8,0,80s35.8,80,80,80
 	s80-35.8,80-80S124.2,0,80,0L80,0z"></path></svg>
                     </div>
